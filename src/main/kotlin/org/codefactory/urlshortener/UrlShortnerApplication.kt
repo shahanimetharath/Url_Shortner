@@ -1,4 +1,4 @@
-package org.codefacory.urlshortner
+package org.codefactory.urlshortener
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
