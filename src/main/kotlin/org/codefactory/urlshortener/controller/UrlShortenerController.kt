@@ -17,6 +17,7 @@ class UrlShortenerController(private val service: UrlShortenerService) {
 
     @GetMapping("/{shortUrl}")
     fun redirect(@PathVariable shortUrl: String): ResponseEntity<Any> {
+        println("shortUrl "+shortUrl)
         val longUrl = service.getLongUrl(shortUrl)
         return if (longUrl != null) {
             ResponseEntity.status(302)
